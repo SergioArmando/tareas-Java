@@ -1,0 +1,77 @@
+
+package javaapplication5;
+
+import java.util.Scanner;
+public class JavaApplication5 {
+
+    static Scanner scanner=new Scanner(System.in); 
+    public static void main(String[] args) {
+        
+        System.out.println("Hola,Por favor ingresa tu nombre:");
+       String nom = scanner.nextLine();
+
+          System.out.println("Con cual moneda deseas hacerlo?");
+          System.out.println("1.Dollar");
+          System.out.println("2.Euro");
+          System.out.println("3.yuanes");
+          
+          System.out.println("Selecciona la opción que desees:");
+          int opcion=scanner.nextInt();
+          switch(opcion){
+
+              case 1:
+                  Dolar();
+          
+                  break;
+                  
+              case 2:
+                  Euro();
+               
+                  break;
+               
+              case 3:
+                  Yuanes();
+                  
+                  break;
+
+                }
+
+            }
+        static void Dolar(){
+        System.out.println("Resultado con dollar");
+       
+         System.out.println("Digita tu numero:");
+         int numero1=scanner.nextInt();
+         
+       double resultado = numero1*0.13;
+    
+       
+       System.out.println(" Quetzales a Dolares es:"+resultado);
+        }
+            
+       static void Euro(){
+        System.out.println("Resultados con Euros");
+        
+         System.out.println("Digita tu Numero:");
+         int numero1=scanner.nextInt();
+        
+       double resultado = numero1*0.11;
+       
+       System.out.println(" Quetzales a Euros es:"+resultado);
+       }
+       
+           static void Yuanes(){
+        System.out.println("Resultado con Yuanes");
+        
+      
+         System.out.println("Digita tu Cantidad de Quetzales:");
+         int numero1=scanner.nextInt();
+        
+       double resultado = numero1*0.84;
+       
+       System.out.println(" Quetzales a Yuanes es:"+resultado);
+           }
+
+    }
+    
+
